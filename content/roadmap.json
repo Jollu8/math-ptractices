@@ -1,0 +1,110 @@
+{
+  "stages": [
+    {
+      "title": "Уверенная база",
+      "description": "Начните с вычислений и простых уравнений; эти навыки пригодятся почти в каждой следующей теме.",
+      "topics": [
+        {
+          "name": "Арифметика",
+          "start_card": "fraction-sum"
+        },
+        {
+          "name": "Проценты",
+          "start_card": "percent-discount"
+        },
+        {
+          "name": "Элементарная алгебра",
+          "start_card": "linear-equation"
+        }
+      ]
+    },
+    {
+      "title": "Алгебра и зависимости",
+      "description": "Переходите от преобразований и неравенств к функциям и последовательностям.",
+      "topics": [
+        {
+          "name": "Алгебра",
+          "start_card": "powers-product"
+        },
+        {
+          "name": "Неравенства",
+          "start_card": "amgm-rational-inequality"
+        },
+        {
+          "name": "Функции",
+          "start_card": "function-value-101"
+        },
+        {
+          "name": "Последовательности",
+          "start_card": "arithmetic-progression-tenth-106"
+        }
+      ]
+    },
+    {
+      "title": "Геометрия и пространство",
+      "description": "Развивайте чертёжное и пространственное мышление, закрепляя его координатами и векторами.",
+      "topics": [
+        {
+          "name": "Геометрия",
+          "start_card": "triangle-area-base-height-114"
+        },
+        {
+          "name": "Координатная геометрия",
+          "start_card": "slope-between-points-105"
+        },
+        {
+          "name": "Стереометрия",
+          "start_card": "sphere-surface-area-485"
+        },
+        {
+          "name": "Векторы",
+          "start_card": "vector-dot-product-coordinates-182"
+        }
+      ]
+    },
+    {
+      "title": "Логика, числа и вероятность",
+      "description": "Осваивайте делимость, подсчёт вариантов и вероятностные рассуждения.",
+      "topics": [
+        {
+          "name": "Теория чисел",
+          "start_card": "gcd-euclidean"
+        },
+        {
+          "name": "Комбинаторика",
+          "start_card": "choose-two-from-seven-162"
+        },
+        {
+          "name": "Теория вероятностей",
+          "start_card": "two-dice"
+        },
+        {
+          "name": "Дискретная математика",
+          "start_card": "pigeonhole-divisibility"
+        }
+      ]
+    },
+    {
+      "title": "Переход к высшей математике",
+      "description": "Когда школьная алгебра и геометрия уверенно освоены, пробуйте новые языки и методы.",
+      "topics": [
+        {
+          "name": "Тригонометрия",
+          "start_card": "cosine-sixty-126"
+        },
+        {
+          "name": "Комплексные числа",
+          "start_card": "complex-modulus-180"
+        },
+        {
+          "name": "Линейная алгебра",
+          "start_card": "matrix-system"
+        },
+        {
+          "name": "Математический анализ",
+          "start_card": "derivative-minimum"
+        }
+      ]
+    }
+  ]
+}

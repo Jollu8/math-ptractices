@@ -1,0 +1,14 @@
+{
+  "title": "Основа — практикум по математике",
+  "brand": "основа",
+  "author": "Jollu8",
+  "telegram_url": "https://t.me/jollu8",
+  "portfolio_url": "https://jollu8.github.io/jollu8",
+  "coffee_url": "https://t.me/jollu8",
+  "levels": {
+    "basic": "Базовый",
+    "school": "Школьный",
+    "advanced": "Продвинутый",
+    "challenge": "Олимпиадный / университетский"
+  }
+}

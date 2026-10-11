@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Открытый каталог математических задач: условия, решения, ошибки и теория.">
+  <title>$title</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/katex.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.18.7/dist/contrib/auto-render.min.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="icon-telegram" viewBox="0 0 24 24"><path fill="currentColor" d="M21.6 3.4 18.3 20c-.2 1.2-.9 1.5-1.9.9l-5-3.7-2.4 2.3c-.3.3-.5.5-1 .5l.4-5.1 9.2-8.3c.4-.4-.1-.6-.7-.2L5.5 13.6.6 12.1c-1.1-.4-1.1-1.1.2-1.6L20 3.1c.9-.3 1.8.2 1.6.3Z"/></symbol>
+    <symbol id="icon-portfolio" viewBox="0 0 24 24"><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 7h18v14H3zM3 12c5 3 13 3 18 0M10 13h4v3h-4z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-coffee" viewBox="0 0 24 24"><path d="M4 8h13v8a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8Zm13 1h2a3 3 0 0 1 0 6h-2M3 22h16M7 2v3m4-3v3m4-3v3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </defs></svg>
+  <a class="skip" href="#catalogue">Перейти к задачам</a>
+  <header class="header wrap">
+    <a href="./" class="brand"><span class="brand-icon">∑</span> $brand<span class="brand-note">математический практикум</span></a>
+    <nav class="header-actions" aria-label="Автор и поддержка"><a class="icon-link" href="$telegram_url" target="_blank" rel="noopener" aria-label="Telegram автора" title="Telegram автора"><svg class="icon" aria-hidden="true"><use href="#icon-telegram"/></svg></a><a class="icon-link" href="$portfolio_url" target="_blank" rel="noopener" aria-label="Портфолио автора" title="Портфолио автора"><svg class="icon" aria-hidden="true"><use href="#icon-portfolio"/></svg></a><a class="coffee" href="$coffee_url" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-coffee"/></svg><span>Кофе автору</span></a></nav>
+  </header>
+  <main class="wrap">
+    <section class="intro-bar"><div><p class="eyebrow">МАТЕМАТИКА — ПОШАГОВО</p><h1>Практика, которая даёт основу.</h1></div><a class="start-link" href="#fraction-sum">Начать с базы →</a></section>
+    <section class="progress-panel" aria-label="Ваш прогресс"><div class="progress-summary"><strong id="progress-count">Решено 0 из $count</strong><progress id="progress-bar" value="0" max="$count" aria-label="Решённые задачи"></progress><p id="progress-note">Прогресс сохраняется в этом браузере.</p></div><a id="resume" class="resume" href="#catalogue" hidden>Продолжить <span id="resume-title"></span> →</a></section>
+    <p id="storage-status" class="muted" role="status" hidden>Браузер не разрешает сохранение. Прогресс будет доступен только до закрытия страницы.</p>
+    <section class="learning-guide" aria-label="Навигация по обучению">
+      <details class="roadmap">
+        <summary><span class="roadmap-title">Маршрут обучения</span><span class="roadmap-prompt">5 последовательных этапов <span class="summary-icon" aria-hidden="true">＋</span></span></summary>
+        <p class="roadmap-intro">Идите по этапам сверху вниз или выбирайте только интересующие темы. Отмечайте решённые задачи — прогресс сохранится в этом браузере.</p>
+        <ol class="roadmap-list">$roadmap</ol>
+      </details>
+    </section>
+    <section id="catalogue" class="catalogue">
+      <form class="filters" role="search" id="filters"><label class="search-label">Поиск<input id="search" type="search" placeholder="Название, тема или тег…" autocomplete="off"></label><label>Тема<select id="topic"><option value="">Все темы</option>$topics</select></label><label>Уровень<select id="level"><option value="">Все уровни</option>$levels</select></label><label>Прогресс<select id="completion-filter"><option value="">Все задачи</option><option value="new">Не решены</option><option value="done">Решены</option></select></label><button class="reset" type="reset">Сбросить фильтры</button></form>
+      <details class="topic-browser"><summary>Быстрый переход по темам <span>Все темы <span class="summary-icon" aria-hidden="true">＋</span></span></summary><nav class="topic-index" aria-label="Темы каталога">$topic_index</nav></details>
+      <div class="results-line"><h2>Каталог задач <span class="total">$count</span></h2><p id="result-count" role="status" aria-live="polite">Показано задач: $count</p></div>
+      <noscript><p>Карточки и решения доступны без JavaScript. Для фильтров, формул и сохранения прогресса включите JavaScript.</p></noscript>
+      <p id="math-status" class="muted" role="status" hidden>Формулы показаны в исходном LaTeX: библиотека рендеринга недоступна.</p>
+      <p class="carousel-hint">На телефоне листайте карточки свайпом влево и вправо.</p>
+      <div class="grid">$cards</div><div id="empty" class="empty" hidden><h3>Задач по этим условиям пока нет</h3><p>Попробуйте другую тему или сбросьте фильтры.</p></div>
+    </section>
+  </main>
+  <footer class="wrap footer"><div><strong>Об авторе · $author</strong><p>Собираю математическую базу и делюсь решениями.</p></div><nav class="author-links" aria-label="Ссылки автора"><a href="$telegram_url" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-telegram"/></svg>Telegram</a><a href="$portfolio_url" target="_blank" rel="noopener"><svg class="icon" aria-hidden="true"><use href="#icon-portfolio"/></svg>Портфолио</a></nav></footer>
+</body>
+</html>

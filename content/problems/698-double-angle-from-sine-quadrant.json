@@ -1,0 +1,30 @@
+{
+  "schema_version": 1,
+  "id": "double-angle-from-sine-quadrant-698",
+  "title": "Двойной угол по синусу и четверти",
+  "topic": "Тригонометрия",
+  "level": "school",
+  "minutes": 6,
+  "tags": ["формулы двойного угла", "четверти", "тригонометрические тождества"],
+  "statement": [
+    "Известно, что $\\sin\\alpha=\\frac35$ и $\\frac\\pi2<\\alpha<\\pi$. Найдите $\\sin2\\alpha$ и $\\cos2\\alpha$."
+  ],
+  "materials": [],
+  "solution": {
+    "steps": [
+      "Угол $\\alpha$ лежит во второй четверти, поэтому $\\cos\\alpha<0$. Из $\\sin^2\\alpha+\\cos^2\\alpha=1$ получаем $\\cos\\alpha=-\\frac45$.",
+      "Тогда $\\sin2\\alpha=2\\sin\\alpha\\cos\\alpha=2\\cdot\\frac35\\cdot\\left(-\\frac45\\right)=-\\frac{24}{25}$.",
+      "Также $\\cos2\\alpha=\\cos^2\\alpha-\\sin^2\\alpha=\\frac{16}{25}-\\frac9{25}=\\frac7{25}$."
+    ],
+    "answer": "$\\sin2\\alpha=-\\frac{24}{25}$, $\\cos2\\alpha=\\frac7{25}$."
+  },
+  "mistakes": [
+    "Знак косинуса выбирается по четверти угла, а не только из извлечения квадратного корня."
+  ],
+  "theory": [
+    {
+      "title": "$\\sin2\\alpha=2\\sin\\alpha\\cos\\alpha$ и $\\cos2\\alpha=\\cos^2\\alpha-\\sin^2\\alpha$."
+    }
+  ],
+  "source": "Авторская учебная задача; не цитата и не переработка из сборника Антонова."
+}
